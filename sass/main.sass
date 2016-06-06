@@ -108,12 +108,50 @@ img
 .large-window
   height: 640px
   margin-top: 100px
+  position: relative
   -webkit-border-radius: 50%
   -moz-border-radius: 50%
   border-radius: 50%
   background:
     image: url(../images/model2.jpg)
     size: auto 1100px
-    position: top center
+    position: center 0
     repeat: no-repeat
     attachment: fixed
+
+.window-tint
+  background-color: rgba(0,0,0, .5)
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  border-radius: 50%
+  display: flex
+  justify-content: center
+  align-items: center
+
+.promo-text
+  color: #fff
+  font-weight: 100
+  font-size: 50px
+
+  strong
+    display: block
+    font-size: 30px
+  span
+    font:
+      weight: 300
+      size: 18px
+      style: italic
+    color: rgba(255,255,255, .6)
+  .window-cta
+    font-size: 20px
+    text-decoration: none
+    color: inherit
+    border: 1px solid white
+    padding: 10px 20px
+    transition: all .3s ease-in-out
+    &:hover
+      background: #fff
+      color: black
