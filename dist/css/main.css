@@ -13,6 +13,10 @@ h1 {
   font-size: 2rem;
 }
 
+p {
+  font-size: 1em;
+}
+
 figure {
   margin: auto;
 }
@@ -121,7 +125,7 @@ img {
 /* Large Window */
 .large-window {
   height: 640px;
-  margin-top: 100px;
+  margin: 100px 0;
   position: relative;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -129,7 +133,7 @@ img {
   background-image: url(../images/model2.jpg);
   background-size: auto 1100px;
   background-position: center 0;
-  background-repeat: no-repeat;
+  background-repeat: repeat-y;
   background-attachment: fixed;
 }
 
@@ -176,4 +180,27 @@ img {
 .promo-text .window-cta:hover {
   background: #fff;
   color: black;
+}
+
+/* Posts */
+.blog-posts {
+  margin-top: 100px;
+  position: relative;
+}
+
+.blog-posts .post {
+  border: 1px solid #E1E1E1;
+  padding: 20px 20px 0;
+}
+
+.blog-posts .post-1 {
+  transform: translate(100px, 20px);
+}
+
+.blog-posts .post-2 {
+  z-index: 1;
+}
+
+.blog-posts .post-3 {
+  transform: translate(-100px, 20px);
 }
