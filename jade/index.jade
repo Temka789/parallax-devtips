@@ -39,7 +39,7 @@ html(lang='en')
 
           .row.img-row
             figure.columns.four
-              img(src='images/model1.jpg')
+              img(src='images/model3.jpg')
               figcaption BlackBird Sweater - <strong>$135</strong>
 
             figure.columns.four
@@ -47,7 +47,7 @@ html(lang='en')
               figcaption BlackBird trousers - <strong>$135</strong>
 
             figure.columns.four
-              img(src='images/model3.jpg')
+              img(src='images/model1.jpg')
               figcaption BlackBird jacket - <strong>$135</strong>
 
           .row.img-row
@@ -98,8 +98,30 @@ html(lang='en')
             p Lorem ipsum some text
             p: a.button(href='') read more
 
-    div(style="height: 2000px")
+    footer
+      .row.footer-stuff
+        .columns.three
+          span  find us on
+          ul
+            li: a(href='') Twitter
+            li: a(href='') Facebook
+            li: a(href='') Pinterest
+            li: a(href='') Instagram
+        .columns.three
+          span other shops
+          ul
+            li: a(href='') Red Robin
+            li: a(href='') Emerald Eagle
+            li: a(href='') Crimson Crane
+            li: a(href='') Auburn Abbot
+        .columns.six
+          p <strong>Sign Up for the newsletter</strong>
 
+          form.row
+            .columns.eight
+              input(type='email' placeholder='Your email')
+            .columns.four
+              input(type='submit' value='Submit').button-primary
 
     script(src='https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js')
     script(src='js/main.js')

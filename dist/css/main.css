@@ -21,6 +21,26 @@ figure {
   margin: auto;
 }
 
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: inherit;
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+  margin-bottom: 400px;
+  background: #fff;
+  overflow: hidden;
+}
+
 .content article {
   padding: 50px 0;
   max-width: 640px;
@@ -35,6 +55,7 @@ img {
 /*Parallax*/
 .bird-box {
   position: relative;
+  z-index: 2;
   height: 600px;
   background-image: url(../images/bird-bg.jpg);
   background-size: auto 600px;
@@ -193,14 +214,37 @@ img {
   padding: 20px 20px 0;
 }
 
-.blog-posts .post-1 {
-  transform: translate(100px, 20px);
-}
-
 .blog-posts .post-2 {
   z-index: 1;
 }
 
-.blog-posts .post-3 {
-  transform: translate(-100px, 20px);
+/* footer */
+footer {
+  background: #000;
+  color: #fff;
+  padding: 40px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  font-size: 1rem;
+}
+
+footer .footer-stuff {
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+footer span {
+  display: block;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+footer li {
+  font-size: 1rem;
+  margin-bottom: 3px;
+}
+
+footer a {
+  color: #fff;
 }

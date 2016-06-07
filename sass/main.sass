@@ -13,8 +13,19 @@ p
   font-size: 1em
 figure
   margin: auto
+li
+  list-style: none
+a
+  text-decoration: none
+  &:hover
+    color: inherit
 
 .content
+  position: relative
+  z-index: 2
+  margin-bottom: 400px
+  background: #fff
+  overflow: hidden
   article
     padding: 50px 0
     max-width: 640px
@@ -27,6 +38,7 @@ img
 /*Parallax*/
 .bird-box
   position: relative
+  z-index: 2
   height: 600px
   background:
     image: url(../images/bird-bg.jpg)
@@ -166,8 +178,31 @@ img
     border: 1px solid #E1E1E1
     padding: 20px 20px 0
   .post-1
-    transform: translate(100px, 20px)
+
   .post-2
     z-index: 1
   .post-3
-    transform: translate(-100px, 20px)
+
+
+/* footer */
+footer
+  background: #000
+  color: #fff
+  padding: 40px 0
+  position: fixed
+  bottom: 0
+  width: 100%
+  font-size: 1rem
+
+  .footer-stuff
+    max-width: 640px
+    margin: 0 auto
+  span
+    display: block
+    text-transform: uppercase
+    margin-bottom: 10px
+  li
+    font-size: 1rem
+    margin-bottom: 3px
+  a
+    color: #fff
